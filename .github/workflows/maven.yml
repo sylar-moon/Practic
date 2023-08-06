@@ -31,7 +31,7 @@ jobs:
           region: 'us-west-2' # Замените на ваш регион AWS Elastic Beanstalk
           application_name: 'RestApiShpp' # Замените на имя вашего приложения в Elastic Beanstalk
           environment_name: 'RestApiShpp-env' # Замените на имя вашей среды в Elastic Beanstalk
-          version_label: 'v${{ github.sha }}' # Используйте хеш последнего коммита в качестве метки версии
+          version_label: 'v${{ github.sha }}1' # Используйте хеш последнего коммита в качестве метки версии
           deployment_package: 'practic/target/practic-0.0.1.jar' # Путь к директории с .jar или .war файлом для деплоя
           wait_for_deployment: true # Дожидаться завершения деплоя
           wait_for_environment_recovery: true # Дожидаться восстановления среды после деплоя
